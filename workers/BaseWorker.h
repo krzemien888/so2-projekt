@@ -14,9 +14,11 @@ class BaseWorker {
     BaseSeparator* dataDestination;
     BaseSeparator* dataSource;
     State currentState;
+    bool endWork = false;
 public:
     BaseWorker(IView *view, BaseSeparator *dataDestination, BaseSeparator *dataSource, std::string name);
     virtual void work() = 0;
+    void stopWorking();
 };
 
 

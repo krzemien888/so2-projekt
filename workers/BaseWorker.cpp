@@ -8,3 +8,7 @@ BaseWorker::BaseWorker(IView *view, BaseSeparator *dataDestination, BaseSeparato
     : view(view), dataDestination(dataDestination), dataSource(dataSource), currentState(name)
 {}
 
+void BaseWorker::stopWorking() {
+    endWork = true;
+}
+
