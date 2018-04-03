@@ -312,6 +312,33 @@ workers/BaseWorker.cpp.s:
 	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/BaseWorker.cpp.s
 .PHONY : workers/BaseWorker.cpp.s
 
+workers/WoodchopperWorker.o: workers/WoodchopperWorker.cpp.o
+
+.PHONY : workers/WoodchopperWorker.o
+
+# target to build an object file
+workers/WoodchopperWorker.cpp.o:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/WoodchopperWorker.cpp.o
+.PHONY : workers/WoodchopperWorker.cpp.o
+
+workers/WoodchopperWorker.i: workers/WoodchopperWorker.cpp.i
+
+.PHONY : workers/WoodchopperWorker.i
+
+# target to preprocess a source file
+workers/WoodchopperWorker.cpp.i:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/WoodchopperWorker.cpp.i
+.PHONY : workers/WoodchopperWorker.cpp.i
+
+workers/WoodchopperWorker.s: workers/WoodchopperWorker.cpp.s
+
+.PHONY : workers/WoodchopperWorker.s
+
+# target to generate assembly for a file
+workers/WoodchopperWorker.cpp.s:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/WoodchopperWorker.cpp.s
+.PHONY : workers/WoodchopperWorker.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -342,6 +369,9 @@ help:
 	@echo "... workers/BaseWorker.o"
 	@echo "... workers/BaseWorker.i"
 	@echo "... workers/BaseWorker.s"
+	@echo "... workers/WoodchopperWorker.o"
+	@echo "... workers/WoodchopperWorker.i"
+	@echo "... workers/WoodchopperWorker.s"
 .PHONY : help
 
 

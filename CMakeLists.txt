@@ -14,6 +14,6 @@ add_executable(so2_projekt main.cpp
         utils/State.h
         utils/StateRaport.cpp
         utils/StateRaport.h
-        views/IView.cpp views/IView.h workers/BaseSeparator.cpp workers/BaseSeparator.h)
+        views/IView.cpp views/IView.h workers/BaseSeparator.cpp workers/BaseSeparator.h workers/WoodchopperWorker.cpp workers/WoodchopperWorker.h)
 
 target_link_libraries (so2_projekt ${CMAKE_THREAD_LIBS_INIT})
