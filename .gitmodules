@@ -1,0 +1,6 @@
+[submodule "libs/googletest"]
+	path = libs/googletest
+	url = http://github.com/google/googletest
+[submodule "libs/ncurses"]
+	path = libs/ncurses
+	url = http://github.com/gittup/ncurses
