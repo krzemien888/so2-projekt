@@ -123,33 +123,6 @@ so2_projekt/fast:
 	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/build
 .PHONY : so2_projekt/fast
 
-RawConsoleMainView.o: RawConsoleMainView.cpp.o
-
-.PHONY : RawConsoleMainView.o
-
-# target to build an object file
-RawConsoleMainView.cpp.o:
-	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/RawConsoleMainView.cpp.o
-.PHONY : RawConsoleMainView.cpp.o
-
-RawConsoleMainView.i: RawConsoleMainView.cpp.i
-
-.PHONY : RawConsoleMainView.i
-
-# target to preprocess a source file
-RawConsoleMainView.cpp.i:
-	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/RawConsoleMainView.cpp.i
-.PHONY : RawConsoleMainView.cpp.i
-
-RawConsoleMainView.s: RawConsoleMainView.cpp.s
-
-.PHONY : RawConsoleMainView.s
-
-# target to generate assembly for a file
-RawConsoleMainView.cpp.s:
-	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/RawConsoleMainView.cpp.s
-.PHONY : RawConsoleMainView.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -177,6 +150,168 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+utils/State.o: utils/State.cpp.o
+
+.PHONY : utils/State.o
+
+# target to build an object file
+utils/State.cpp.o:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/utils/State.cpp.o
+.PHONY : utils/State.cpp.o
+
+utils/State.i: utils/State.cpp.i
+
+.PHONY : utils/State.i
+
+# target to preprocess a source file
+utils/State.cpp.i:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/utils/State.cpp.i
+.PHONY : utils/State.cpp.i
+
+utils/State.s: utils/State.cpp.s
+
+.PHONY : utils/State.s
+
+# target to generate assembly for a file
+utils/State.cpp.s:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/utils/State.cpp.s
+.PHONY : utils/State.cpp.s
+
+utils/StateRaport.o: utils/StateRaport.cpp.o
+
+.PHONY : utils/StateRaport.o
+
+# target to build an object file
+utils/StateRaport.cpp.o:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/utils/StateRaport.cpp.o
+.PHONY : utils/StateRaport.cpp.o
+
+utils/StateRaport.i: utils/StateRaport.cpp.i
+
+.PHONY : utils/StateRaport.i
+
+# target to preprocess a source file
+utils/StateRaport.cpp.i:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/utils/StateRaport.cpp.i
+.PHONY : utils/StateRaport.cpp.i
+
+utils/StateRaport.s: utils/StateRaport.cpp.s
+
+.PHONY : utils/StateRaport.s
+
+# target to generate assembly for a file
+utils/StateRaport.cpp.s:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/utils/StateRaport.cpp.s
+.PHONY : utils/StateRaport.cpp.s
+
+views/IView.o: views/IView.cpp.o
+
+.PHONY : views/IView.o
+
+# target to build an object file
+views/IView.cpp.o:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/views/IView.cpp.o
+.PHONY : views/IView.cpp.o
+
+views/IView.i: views/IView.cpp.i
+
+.PHONY : views/IView.i
+
+# target to preprocess a source file
+views/IView.cpp.i:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/views/IView.cpp.i
+.PHONY : views/IView.cpp.i
+
+views/IView.s: views/IView.cpp.s
+
+.PHONY : views/IView.s
+
+# target to generate assembly for a file
+views/IView.cpp.s:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/views/IView.cpp.s
+.PHONY : views/IView.cpp.s
+
+views/RawConsoleMainView.o: views/RawConsoleMainView.cpp.o
+
+.PHONY : views/RawConsoleMainView.o
+
+# target to build an object file
+views/RawConsoleMainView.cpp.o:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/views/RawConsoleMainView.cpp.o
+.PHONY : views/RawConsoleMainView.cpp.o
+
+views/RawConsoleMainView.i: views/RawConsoleMainView.cpp.i
+
+.PHONY : views/RawConsoleMainView.i
+
+# target to preprocess a source file
+views/RawConsoleMainView.cpp.i:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/views/RawConsoleMainView.cpp.i
+.PHONY : views/RawConsoleMainView.cpp.i
+
+views/RawConsoleMainView.s: views/RawConsoleMainView.cpp.s
+
+.PHONY : views/RawConsoleMainView.s
+
+# target to generate assembly for a file
+views/RawConsoleMainView.cpp.s:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/views/RawConsoleMainView.cpp.s
+.PHONY : views/RawConsoleMainView.cpp.s
+
+workers/BaseSeparator.o: workers/BaseSeparator.cpp.o
+
+.PHONY : workers/BaseSeparator.o
+
+# target to build an object file
+workers/BaseSeparator.cpp.o:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/BaseSeparator.cpp.o
+.PHONY : workers/BaseSeparator.cpp.o
+
+workers/BaseSeparator.i: workers/BaseSeparator.cpp.i
+
+.PHONY : workers/BaseSeparator.i
+
+# target to preprocess a source file
+workers/BaseSeparator.cpp.i:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/BaseSeparator.cpp.i
+.PHONY : workers/BaseSeparator.cpp.i
+
+workers/BaseSeparator.s: workers/BaseSeparator.cpp.s
+
+.PHONY : workers/BaseSeparator.s
+
+# target to generate assembly for a file
+workers/BaseSeparator.cpp.s:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/BaseSeparator.cpp.s
+.PHONY : workers/BaseSeparator.cpp.s
+
+workers/BaseWorker.o: workers/BaseWorker.cpp.o
+
+.PHONY : workers/BaseWorker.o
+
+# target to build an object file
+workers/BaseWorker.cpp.o:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/BaseWorker.cpp.o
+.PHONY : workers/BaseWorker.cpp.o
+
+workers/BaseWorker.i: workers/BaseWorker.cpp.i
+
+.PHONY : workers/BaseWorker.i
+
+# target to preprocess a source file
+workers/BaseWorker.cpp.i:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/BaseWorker.cpp.i
+.PHONY : workers/BaseWorker.cpp.i
+
+workers/BaseWorker.s: workers/BaseWorker.cpp.s
+
+.PHONY : workers/BaseWorker.s
+
+# target to generate assembly for a file
+workers/BaseWorker.cpp.s:
+	$(MAKE) -f CMakeFiles/so2_projekt.dir/build.make CMakeFiles/so2_projekt.dir/workers/BaseWorker.cpp.s
+.PHONY : workers/BaseWorker.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +321,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... so2_projekt"
-	@echo "... RawConsoleMainView.o"
-	@echo "... RawConsoleMainView.i"
-	@echo "... RawConsoleMainView.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... utils/State.o"
+	@echo "... utils/State.i"
+	@echo "... utils/State.s"
+	@echo "... utils/StateRaport.o"
+	@echo "... utils/StateRaport.i"
+	@echo "... utils/StateRaport.s"
+	@echo "... views/IView.o"
+	@echo "... views/IView.i"
+	@echo "... views/IView.s"
+	@echo "... views/RawConsoleMainView.o"
+	@echo "... views/RawConsoleMainView.i"
+	@echo "... views/RawConsoleMainView.s"
+	@echo "... workers/BaseSeparator.o"
+	@echo "... workers/BaseSeparator.i"
+	@echo "... workers/BaseSeparator.s"
+	@echo "... workers/BaseWorker.o"
+	@echo "... workers/BaseWorker.i"
+	@echo "... workers/BaseWorker.s"
 .PHONY : help
 
 

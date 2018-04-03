@@ -6,7 +6,6 @@
 
 #include <iostream>
 #include <iostream>
-#include <chrono>
 #include <thread>
 
 void RawConsoleMainView::refresh() {

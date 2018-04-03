@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "views/RawConsoleMainView.h"
+#include "utils/StateRaport.h"
 #include <thread>
 
 int main() {
