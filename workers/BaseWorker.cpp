@@ -4,7 +4,7 @@
 
 #include "BaseWorker.h"
 
-BaseWorker::BaseWorker(IView *view, BaseSeparator *dataDestination, BaseSeparator *dataSource, std::string &name)
+BaseWorker::BaseWorker(IView *view, BaseSeparator *dataDestination, BaseSeparator *dataSource, std::string name)
     : view(view), dataDestination(dataDestination), dataSource(dataSource), currentState(name)
 {}
 
