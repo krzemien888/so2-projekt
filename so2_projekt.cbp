@@ -84,13 +84,49 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/flint/Repos/so2-projekt/RawConsoleMainView.cpp">
-			<Option target="so2_projekt"/>
-		</Unit>
-		<Unit filename="/home/flint/Repos/so2-projekt/RawConsoleMainView.h">
-			<Option target="so2_projekt"/>
-		</Unit>
 		<Unit filename="/home/flint/Repos/so2-projekt/main.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/utils/State.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/utils/State.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/utils/StateRaport.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/utils/StateRaport.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/views/IView.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/views/IView.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/views/RawConsoleMainView.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/views/RawConsoleMainView.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/workers/BaseSeparator.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/workers/BaseSeparator.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/workers/BaseWorker.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/workers/BaseWorker.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/workers/WoodchopperWorker.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/flint/Repos/so2-projekt/workers/WoodchopperWorker.h">
 			<Option target="so2_projekt"/>
 		</Unit>
 		<Unit filename="/home/flint/Repos/so2-projekt/CMakeLists.txt">

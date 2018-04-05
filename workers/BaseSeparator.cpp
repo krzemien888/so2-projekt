@@ -3,10 +3,12 @@
 //
 
 #include "BaseSeparator.h"
+#include <iostream>
 
 void BaseSeparator::put(int amount)
 {
     std::unique_lock<std::mutex> lk(inputMutex);
+    std::cout << "Base separator acquired " << amount << " of wood" << std::endl;
     this->data += amount;
     lk.unlock();
 }

@@ -25,6 +25,7 @@ public:
 
     void transition(StateEnum newState);
     StateRaport getRaport();
+    StateEnum getEnum();
 };
 
 

@@ -10,6 +10,7 @@
 #include "BaseSeparator.h"
 
 class BaseWorker {
+protected:
     IView* view;
     BaseSeparator* dataDestination;
     BaseSeparator* dataSource;

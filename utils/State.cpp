@@ -33,3 +33,7 @@ State::State(std::string &ownerName) {
 void State::transition(StateEnum newState) {
     this->currentState = newState;
 }
+
+StateEnum State::getEnum() {
+    return this->currentState;
+}

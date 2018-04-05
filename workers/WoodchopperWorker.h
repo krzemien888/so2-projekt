@@ -10,7 +10,6 @@
 
 class WoodchopperWorker : public BaseWorker
 {
-    static int created = 0;
 public:
     void work() override ;
     WoodchopperWorker(IView*, BaseSeparator* dataDestination);

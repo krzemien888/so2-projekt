@@ -8,6 +8,7 @@
 #include "../utils/StateRaport.h"
 
 class IView {
+public:
     virtual void addRaport(StateRaport raport) = 0;
     virtual void refresh() = 0;
     virtual void stopRefreshing()  = 0;
