@@ -1,0 +1,16 @@
+
+\.idea/
+
+CMakeCache\.txt
+
+CMakeLists\.txt
+
+*.cmake
+
+cmake-build-debug/CMakeFiles/3\.10\.3/
+
+cmake-build-debug/CMakeFiles/
+
+cmake-build-debug/
+
+Makefile
