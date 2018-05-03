@@ -21,7 +21,7 @@ class State {
 public:
     State(std::string &ownerName);
 
-    State();
+    State() = default;
 
     void transition(StateEnum newState);
     StateRaport getRaport();

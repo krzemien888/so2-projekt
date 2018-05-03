@@ -1,34 +1,32 @@
 #include <iostream>
-#include <string>
 #include "views/RawConsoleMainView.h"
-#include "utils/StateRaport.h"
 #include "workers/WoodchopperWorker.h"
 #include <thread>
-#include <list>
+#include <vector>
 
 int main() {
 
     std::string command;
     RawConsoleMainView view;
-    auto viewThread = std::thread(&RawConsoleMainView::refresh, &view);
-    std::list<WoodchopperWorker> woodchoppers;
+    std::thread viewThread = std::thread(&RawConsoleMainView::refresh, &view);
+    std::vector<WoodchopperWorker> woodchoppers;
     BaseSeparator firstStorage;
-    std::list<std::thread> threads;
     while(command != "q")
     {
         std::cin >> command;
         if(command == "w")
         {
-            WoodchopperWorker worker(&view, &firstStorage);
-            threads.emplace_back(std::thread(&WoodchopperWorker::work, &worker));
+            woodchoppers.emplace_back(WoodchopperWorker(&view, &firstStorage));
         }
     }
+    std::cout << "Closing application " << std::endl;
+    for(int i=0; i < woodchoppers.size(); i++)
+        woodchoppers[i].stopWorking();
 
 
-    for(auto it = threads.begin();it != threads.end(); it++)
-    {
-        it->join();
-    }
+//    for(std::thread & t : threads)
+//        if(t.joinable())
+//            t.join();
 
     view.stopRefreshing();
     viewThread.join();

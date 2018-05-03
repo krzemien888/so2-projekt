@@ -9,6 +9,9 @@
 #include "../views/IView.h"
 #include "BaseSeparator.h"
 
+#include <memory>
+#include <thread>
+
 class BaseWorker {
 protected:
     IView* view;
@@ -16,9 +19,14 @@ protected:
     BaseSeparator* dataSource;
     State currentState;
     bool endWork = false;
+    std::unique_ptr<std::thread> workerThread;
+    virtual void work() = 0;
+
 public:
     BaseWorker(IView *view, BaseSeparator *dataDestination, BaseSeparator *dataSource, std::string name);
-    virtual void work() = 0;
+    BaseWorker(BaseWorker&& worker);
+    ~BaseWorker();
+    virtual void run() final;
     void stopWorking();
 };
 

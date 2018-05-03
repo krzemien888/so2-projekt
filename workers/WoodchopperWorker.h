@@ -11,8 +11,9 @@
 class WoodchopperWorker : public BaseWorker
 {
 public:
-    void work() override ;
+    virtual void work() override;
     WoodchopperWorker(IView*, BaseSeparator* dataDestination);
+    WoodchopperWorker(WoodchopperWorker&&);
 };
 
 
