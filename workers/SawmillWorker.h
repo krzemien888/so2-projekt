@@ -12,6 +12,7 @@ class SawmillWorker : public BaseWorker
 {
 public:
     virtual void work() override;
+    virtual void generateId();
     SawmillWorker(IView*, BaseSeparator* dataDestination);
     SawmillWorker(SawmillWorker&&);
 };

@@ -17,6 +17,8 @@ int main() {
         if(command == "w")
         {
             woodchoppers.emplace_back(WoodchopperWorker(&view, &firstStorage));
+            std::cout << "The Woodchopper are created";
+
         }
     }
     std::cout << "Closing application " << std::endl;
@@ -24,9 +26,7 @@ int main() {
         woodchoppers[i].stopWorking();
 
 
-//    for(std::thread & t : threads)
-//        if(t.joinable())
-//            t.join();
+
 
     view.stopRefreshing();
     viewThread.join();

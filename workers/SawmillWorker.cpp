@@ -32,12 +32,12 @@ void SawmillWorker::work() {
 }
 
 SawmillWorker::SawmillWorker(IView *view , BaseSeparator *dataDestination)
-        : BaseWorker(view, dataDestination, nullptr, "Sawmill")
+        : BaseWorker(view, dataDestination, nullptr, "SawmillWorker")
 {
 
 }
 
-SawmillWorker::SawmillWorker(Sawmill && worker)
+SawmillWorker::SawmillWorker(SawmillWorker && worker)
         : BaseWorker(std::move(worker))
 {
 
