@@ -1,0 +1,3 @@
+/home/black/Work/krzem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/black/Work/krzem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/black/Work/krzem/cmake-build-debug/CMakeFiles/so2_projekt.dir

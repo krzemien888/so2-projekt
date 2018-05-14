@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="so2_projekt"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/black/Work/krzem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/black/Work/krzem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/black/Work/krzem/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="so2_projekt">
+				<Option output="/home/black/Work/krzem/cmake-build-debug/so2_projekt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/black/Work/krzem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 so2_projekt"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="so2_projekt/fast">
+				<Option output="/home/black/Work/krzem/cmake-build-debug/so2_projekt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/black/Work/krzem/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 so2_projekt/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/black/Work/krzem/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/black/Work/krzem/main.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/utils/State.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/utils/State.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/utils/StateRaport.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/utils/StateRaport.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/views/IView.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/views/IView.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/views/RawConsoleMainView.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/views/RawConsoleMainView.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/workers/BaseSeparator.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/workers/BaseSeparator.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/workers/BaseWorker.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/workers/BaseWorker.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/workers/WoodchopperWorker.cpp">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/workers/WoodchopperWorker.h">
+			<Option target="so2_projekt"/>
+		</Unit>
+		<Unit filename="/home/black/Work/krzem/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
