@@ -7,6 +7,8 @@
 int main() {
 
     std::string command;
+    std::map<std::string, int> counterMap;
+    counterMap.insert(std::make_pair("woodchopper", 0));
     RawConsoleMainView view;
     std::thread viewThread = std::thread(&RawConsoleMainView::refresh, &view);
     std::vector<WoodchopperWorker> woodchoppers;
@@ -17,7 +19,7 @@ int main() {
         std::cin >> command;
         if(command == "w")
         {
-            woodchoppers.emplace_back(WoodchopperWorker(&view, &firstStorage));
+            woodchoppers.push_back(WoodchopperWorker(&view, &firstStorage, counterMap.at("woodchopper")++));
             woodchoppers[woodchoppers.size() -1].run();
         }
     }
