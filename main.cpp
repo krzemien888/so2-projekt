@@ -13,6 +13,7 @@ int main() {
     BaseSeparator firstStorage;
     while(command != "q")
     {
+        std::cout << "\nCommand: ";
         std::cin >> command;
         if(command == "w")
         {
