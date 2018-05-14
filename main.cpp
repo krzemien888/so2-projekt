@@ -17,6 +17,7 @@ int main() {
         if(command == "w")
         {
             woodchoppers.emplace_back(WoodchopperWorker(&view, &firstStorage));
+            woodchoppers[woodchoppers.size() -1].run();
         }
     }
     std::cout << "Closing application " << std::endl;
