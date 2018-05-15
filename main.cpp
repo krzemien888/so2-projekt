@@ -18,7 +18,7 @@ int main() {
     std::vector<WoodchopperWorker> woodchoppers;
     std::vector<SawmillWorker> sawmillworkers;
     std::vector<TransporterToSawmill> transportertosawmills;
-    BaseSeparator firstStorage;
+    BaseSeparator firstStorage, secoundStorage;
     while(command != "q")
     {
         std::cout << "\nCommand: ";
@@ -37,7 +37,7 @@ int main() {
         }
         else if(command == "t")
         {
-            transportertosawmills.push_back(TransporterToSawmill(&view, &firstStorage, counterMap.at("TransporterToSawmill")++));
+            transportertosawmills.push_back(TransporterToSawmill(&view, &secoundStorage, &firstStorage, counterMap.at("TransporterToSawmill")++));
             transportertosawmills[transportertosawmills.size() -1].run();
 
         }

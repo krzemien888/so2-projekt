@@ -6,10 +6,12 @@
 #define SO2_PROJEKT_BASESEPARATOR_H
 
 #include <mutex>
+#include <condition_variable>
 
 class BaseSeparator {
     std::mutex inputMutex;
     std::mutex outputMutex;
+    std::condition_variable ready_cv;
     int data = 0;
 
 public:

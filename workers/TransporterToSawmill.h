@@ -12,7 +12,7 @@ class TransporterToSawmill : public BaseWorker
 public:
     virtual void work() override;
     ~TransporterToSawmill();
-    TransporterToSawmill(IView*, BaseSeparator* dataDestination, int counter);
+    TransporterToSawmill(IView*, BaseSeparator* dataDestination, BaseSeparator* dataSource, int counter);
     TransporterToSawmill(TransporterToSawmill&&);
 };
 
