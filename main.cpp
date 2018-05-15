@@ -42,14 +42,24 @@ int main() {
 
         }
     }
+
+
     std::cout << "Closing application " << std::endl;
-    for(int i=0; i < woodchoppers.size(); i++)
+    for(int i = 0; i < woodchoppers.size(); i++){
         woodchoppers[i].stopWorking();
+        std::cout << "Woodchopper_" << i << " stopped" << std::endl;
+    }
 
+    for(int i = 0;  i < sawmillworkers.size(); i++){
+        sawmillworkers[i].stopWorking();
+        std::cout << "SawmillWorker_" << i << " stopped" << std::endl;
+    }
 
-//    for(std::thread & t : threads)
-//        if(t.joinable())
-//            t.join();
+    for(int i = 0; i < transportertosawmills.size(); i++) {
+        transportertosawmills[i].stopWorking();
+        std::cout << "TransporterToSawmill_" << i << " stopped" << std::endl;
+    }
+
 
     view.stopRefreshing();
     viewThread.join();

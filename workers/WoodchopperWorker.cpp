@@ -32,14 +32,12 @@ void WoodchopperWorker::work() {
 }
 
 WoodchopperWorker::WoodchopperWorker(IView *view , BaseSeparator *dataDestination, int counter)
-        : BaseWorker(view, dataDestination, nullptr, "Woodchopper_" + std::to_string(counter))
-{
+        : BaseWorker(view, dataDestination, nullptr, "Woodchopper_" + std::to_string(counter)) {
 
 }
 
 WoodchopperWorker::WoodchopperWorker(WoodchopperWorker && worker)
-    : BaseWorker(std::move(worker))
-{
+    : BaseWorker(std::move(worker)) {
 
 }
 
