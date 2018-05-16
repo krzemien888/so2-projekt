@@ -33,7 +33,7 @@ void TransporterToSawmill::work() {
 }
 
 TransporterToSawmill::TransporterToSawmill(IView *view, BaseSeparator *dataDestination, BaseSeparator *dataSource, int counter)
-        : BaseWorker(view, dataDestination, nullptr, "TransporterToSawmill_" + std::to_string(counter))
+        : BaseWorker(view, dataDestination, dataSource, "TransporterToSawmill_" + std::to_string(counter))
 {
 
 }

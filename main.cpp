@@ -7,18 +7,27 @@
 #include <vector>
 
 int main() {
-    
+
     std::string command;
+    // mapa zliczająca wątki do tworzenia generatora ID
     std::map<std::string, int> counterMap;
     counterMap.insert(std::make_pair("Woodchopper", 0));
     counterMap.insert(std::make_pair("SawmillWorker", 0));
     counterMap.insert(std::make_pair("TransporterToSawmill", 0));
+
     RawConsoleMainView view;
     std::thread viewThread = std::thread(&RawConsoleMainView::refresh, &view);
+
+    // powstanie wektorów trzymających wątki
     std::vector<WoodchopperWorker> woodchoppers;
     std::vector<SawmillWorker> sawmillworkers;
     std::vector<TransporterToSawmill> transportertosawmills;
-    BaseSeparator firstStorage, secoundStorage;
+
+    // inicjalizacja pojemników
+    BaseSeparator firstStorage("FOREST", 30);
+    BaseSeparator secondStorage("SAWMILL", 100);
+
+
     while(command != "q")
     {
         std::cout << "\nCommand: ";
@@ -37,7 +46,7 @@ int main() {
         }
         else if(command == "t")
         {
-            transportertosawmills.push_back(TransporterToSawmill(&view, &secoundStorage, &firstStorage, counterMap.at("TransporterToSawmill")++));
+            transportertosawmills.push_back(TransporterToSawmill(&view, &secondStorage, &firstStorage, counterMap.at("TransporterToSawmill")++));
             transportertosawmills[transportertosawmills.size() -1].run();
 
         }

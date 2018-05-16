@@ -11,7 +11,7 @@ void BaseSeparator::put(int amount)
     not_full.wait( lk, [this] {return data < MAX_CAPACITY;} );
 
 
-    std::cout << "Base separator acquired " << amount << " of wood" << std::endl;
+    std::cout << name_container <<" acquired " << amount << " of wood - > ";
     this->data += amount;
     std::cout << "Current ammount of wood: "<< this -> data <<std::endl;
     not_empty.notify_all();
@@ -19,7 +19,6 @@ void BaseSeparator::put(int amount)
 }
 
 void BaseSeparator::get(int amount) {
-//    int acquiredAmount = 0;
 
         std::unique_lock<std::mutex> lk(lock);
         not_empty.wait( lk, [this] {return data > 0;} );
@@ -27,14 +26,9 @@ void BaseSeparator::get(int amount) {
         not_full.notify_all();
         return;
 
+}
 
-
-
-//    if(amount < this->data)
-//        acquiredAmount = amount;
-//    else
-//        acquiredAmount = this->data;
-//    this->data -= acquiredAmount;
-    lk.unlock();
-//    return acquiredAmount;
+BaseSeparator::BaseSeparator(std::string name, size_t capacity) {
+    name_container = name;
+    MAX_CAPACITY = capacity;
 }

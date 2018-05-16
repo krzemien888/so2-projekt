@@ -12,10 +12,12 @@ class BaseSeparator {
     std::mutex lock;
     std::condition_variable not_empty;
     std::condition_variable not_full;
-    const size_t MAX_CAPACITY = 20;
+    std::size_t MAX_CAPACITY;
+    std::string name_container;
     int data = 0;
 
 public:
+    BaseSeparator(std::string name, size_t CAPACITY);
     void put(int amount);
     void get(int amount);
 };
