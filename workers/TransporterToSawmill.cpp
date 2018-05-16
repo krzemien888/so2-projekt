@@ -20,6 +20,7 @@ void TransporterToSawmill::work() {
                 std::this_thread::sleep_for(std::chrono_literals::operator ""s(2));
                 this->currentState.transition(StateEnum::DataOnOutput);
                 this->view->addRaport(this->currentState.getRaport());
+                this->dataSource->get(5);
                 break;
             case StateEnum::DataOnOutput:
                 std::this_thread::sleep_for(std::chrono_literals::operator ""s(2));
@@ -31,8 +32,8 @@ void TransporterToSawmill::work() {
     }
 }
 
-TransporterToSawmill::TransporterToSawmill(IView *view , BaseSeparator *dataDestination, int counter)
-        : BaseWorker(view, dataDestination, nullptr, "TransporterToSawmill_" + std::to_string(counter))
+TransporterToSawmill::TransporterToSawmill(IView *view, BaseSeparator *dataDestination, BaseSeparator *dataSource, int counter)
+        : BaseWorker(view, dataDestination, dataSource, "TransporterToSawmill_" + std::to_string(counter))
 {
 
 }
