@@ -25,6 +25,6 @@ add_executable(so2_projekt main.cpp
         workers/SawmillWorker.cpp
         workers/SawmillWorker.h
         workers/TransporterToSawmill.cpp
-        workers/TransporterToSawmill.h)
+        workers/TransporterToSawmill.h workers/Dealer.cpp workers/Dealer.h)
 
 target_link_libraries (so2_projekt ${CMAKE_THREAD_LIBS_INIT})

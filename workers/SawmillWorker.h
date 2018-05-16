@@ -13,7 +13,7 @@ class SawmillWorker : public BaseWorker
 public:
     virtual void work() override;
     ~SawmillWorker();
-    SawmillWorker(IView*, BaseSeparator* dataDestination, int counter);
+    SawmillWorker(IView*, BaseSeparator* dataDestination, BaseSeparator* dataSource, int counter);
     SawmillWorker(SawmillWorker&&);
 };
 

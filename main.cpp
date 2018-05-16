@@ -3,6 +3,7 @@
 #include "workers/WoodchopperWorker.h"
 #include "workers/SawmillWorker.h"
 #include "workers/TransporterToSawmill.h"
+#include "workers/Dealer.h"
 #include <thread>
 #include <vector>
 
@@ -14,6 +15,7 @@ int main() {
     counterMap.insert(std::make_pair("Woodchopper", 0));
     counterMap.insert(std::make_pair("SawmillWorker", 0));
     counterMap.insert(std::make_pair("TransporterToSawmill", 0));
+    counterMap.insert(std::make_pair("Dealer", 0));
 
     RawConsoleMainView view;
     std::thread viewThread = std::thread(&RawConsoleMainView::refresh, &view);
@@ -22,10 +24,13 @@ int main() {
     std::vector<WoodchopperWorker> woodchoppers;
     std::vector<SawmillWorker> sawmillworkers;
     std::vector<TransporterToSawmill> transportertosawmills;
+    std::vector<Dealer> dealers;
 
     // inicjalizacja pojemników
-    BaseSeparator firstStorage("FOREST", 30);
-    BaseSeparator secondStorage("SAWMILL", 100);
+    BaseSeparator forestStorage("FOREST", 30);
+    BaseSeparator sawmillStorage("SAWMILL", 50);
+    BaseSeparator warehouseStorage("WAREHOUSE", 100);
+    BaseSeparator soldStorage("SOLDSTORAGE", 10000);
 
 
     while(command != "q")
@@ -34,22 +39,26 @@ int main() {
         std::cin >> command;
         if(command == "w")
         {
-            woodchoppers.push_back(WoodchopperWorker(&view, &firstStorage, counterMap.at("Woodchopper")++));
+            woodchoppers.push_back(WoodchopperWorker(&view, &forestStorage, counterMap.at("Woodchopper")++));
             woodchoppers[woodchoppers.size() -1].run();
-        }
-        // Narazie pozostali workerzy piszą do pierwszego separatora
-        else if(command == "s")
-        {
-            sawmillworkers.push_back(SawmillWorker(&view, &firstStorage, counterMap.at("SawmillWorker")++));
-            sawmillworkers[sawmillworkers.size() -1].run();
-
         }
         else if(command == "t")
         {
-            transportertosawmills.push_back(TransporterToSawmill(&view, &secondStorage, &firstStorage, counterMap.at("TransporterToSawmill")++));
+            transportertosawmills.push_back(TransporterToSawmill(&view, &sawmillStorage, &forestStorage, counterMap.at("TransporterToSawmill")++));
             transportertosawmills[transportertosawmills.size() -1].run();
-
         }
+        else if(command == "s")
+        {
+            sawmillworkers.push_back(SawmillWorker(&view, &warehouseStorage, &sawmillStorage, counterMap.at("SawmillWorker")++));
+            sawmillworkers[sawmillworkers.size() -1].run();
+        }
+        else if(command == "d")
+        {
+            dealers.push_back(Dealer(&view, &soldStorage, &warehouseStorage, counterMap.at("Dealer")++));
+            dealers[dealers.size() -1].run();
+        }
+
+
     }
 
 
@@ -68,6 +77,12 @@ int main() {
         transportertosawmills[i].stopWorking();
         std::cout << "TransporterToSawmill_" << i << " stopped" << std::endl;
     }
+
+    for(int i = 0; i < dealers.size(); i++) {
+        dealers[i].stopWorking();
+        std::cout << "Dealer_" << i << " stopped" << std::endl;
+    }
+
 
 
     view.stopRefreshing();

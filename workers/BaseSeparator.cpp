@@ -9,8 +9,6 @@ void BaseSeparator::put(int amount)
 {
     std::unique_lock<std::mutex> lk(lock);
     not_full.wait( lk, [this] {return data < MAX_CAPACITY;} );
-
-
     std::cout << name_container <<" acquired " << amount << " of wood - > ";
     this->data += amount;
     std::cout << "Current ammount of wood: "<< this -> data <<std::endl;

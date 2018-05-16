@@ -1,13 +1,13 @@
 //
-// Created by pawel on 03.05.18.
+// Created by pawel on 16.05.18.
 //
 
-#include "SawmillWorker.h"
+#include "Dealer.h"
 #include <string>
 #include <thread>
 
 
-void SawmillWorker::work() {
+void Dealer::work() {
     while(!this->endWork) {
         switch (this->currentState.getEnum()) {
 
@@ -32,18 +32,18 @@ void SawmillWorker::work() {
     }
 }
 
-SawmillWorker::SawmillWorker(IView *view , BaseSeparator *dataDestination, BaseSeparator *dataSource, int counter)
-        : BaseWorker(view, dataDestination, dataSource, "SawmillWorker_" + std::to_string(counter))
+Dealer::Dealer(IView *view, BaseSeparator *dataDestination, BaseSeparator *dataSource, int counter)
+        : BaseWorker(view, dataDestination, dataSource, "Dealer_" + std::to_string(counter))
 {
 
 }
 
-SawmillWorker::SawmillWorker(SawmillWorker && worker)
+Dealer::Dealer(Dealer && worker)
         : BaseWorker(std::move(worker))
 {
 
 }
 
-SawmillWorker::~SawmillWorker() {
+Dealer::~Dealer() {
 
 }
