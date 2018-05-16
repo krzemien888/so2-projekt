@@ -7,7 +7,7 @@
 #include <vector>
 
 int main() {
-
+    
     std::string command;
     std::map<std::string, int> counterMap;
     counterMap.insert(std::make_pair("Woodchopper", 0));

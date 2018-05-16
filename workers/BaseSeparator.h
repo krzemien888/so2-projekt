@@ -9,14 +9,15 @@
 #include <condition_variable>
 
 class BaseSeparator {
-    std::mutex inputMutex;
-    std::mutex outputMutex;
-    std::condition_variable ready_cv;
+    std::mutex lock;
+    std::condition_variable not_empty;
+    std::condition_variable not_full;
+    const size_t MAX_CAPACITY = 20;
     int data = 0;
 
 public:
     void put(int amount);
-    int get(int amount);
+    void get(int amount);
 };
 
 
