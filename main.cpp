@@ -30,7 +30,7 @@ int main() {
     BaseSeparator forestStorage("FOREST", 30);
     BaseSeparator sawmillStorage("SAWMILL", 50);
     BaseSeparator warehouseStorage("WAREHOUSE", 100);
-    BaseSeparator soldStorage("SOLDSTORAGE", 10000);
+    BaseSeparator soldStorage("SOLDSTORAGE", 0);
 
 
     while(command != "q")

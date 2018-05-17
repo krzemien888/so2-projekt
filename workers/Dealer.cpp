@@ -26,7 +26,6 @@ void Dealer::work() {
                 std::this_thread::sleep_for(std::chrono_literals::operator ""s(2));
                 this->currentState.transition(StateEnum::Idle);
                 this->view->addRaport(this->currentState.getRaport());
-                this->dataDestination->put(5);
                 break;
         }
     }
